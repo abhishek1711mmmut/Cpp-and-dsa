@@ -1,0 +1,12 @@
+What is low level language?
+closer to hardware as compared to high-level languages instead of software. They provide little or no abstraction from the machine instructions and that's why they allow programmers to manipulate hardware elements like register, memory etc. Low-level languages are often used for designing systems, such as developing operating systems, device drivers, and embedded systems.
+
+What is high level language?
+High-level languages are closer to human languages and provide abstraction from the machine instructions. They are easier to read and write and are used for developing applications, such as web applications, mobile applications, and desktop applications.
+
+Which language is C++?
+C++ is a high-level language. It is an extension of the C programming language and is used for developing applications that require high performance and efficiency.
+
+low level = long development time + very fast executable file
+
+high level = shorter development time + slower executable file
