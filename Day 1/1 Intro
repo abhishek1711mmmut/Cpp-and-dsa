@@ -10,3 +10,9 @@ C++ is a high-level language. It is an extension of the C programming language a
 low level = long development time + very fast executable file
 
 high level = shorter development time + slower executable file
+
+What is preprocessor?
+In C++, the preprocessor directives are special commands that are used to instruct the preprocessor. It begins with a '#' symbol and tells the preprocessor to the modify source code before compilation. There are different preprocessor directives in C++ for different operations.
+
+What happen if we return -1 instead of 0 inside main function?
+Returning 0 indicates that programmes is successfully executed where as return non-zero value like -1 will run the programme but it will tell the os that programme is abnormally terminated.
