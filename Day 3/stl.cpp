@@ -1,6 +1,9 @@
 #include <iostream>
 #include<algorithm>
 #include<list>
+#include<queue>
+#include<stack>
+#include<unordered_map>
 using namespace std;
 int main()
 {
@@ -35,4 +38,38 @@ int main()
         cout<<*it3<<" ";
         it3++;
     }
+
+    deque<int> dq;
+    dq.push_back(1);
+    dq.push_back(2);
+    dq.push_front(3);
+    dq.push_front(4);
+
+    cout<<"\nDeque elements are: ";
+    for(auto i:dq){
+        cout<<i<<" ";
+    }
+
+    queue<int> q;
+    q.push(1);
+    q.push(2);
+    q.push(3);
+
+    cout<<"\nQueue elements are: ";
+    while(!q.empty()){
+        cout<<q.front()<<" ";
+        q.pop();
+    }
+
+    unordered_map<string, string> ump;
+    ump["in"]="India";
+    ump.insert({"us","United States"});
+    ump.insert(make_pair("uk","United Kingdom"));
+    pair<string, string> p;
+    p.first="aus";
+    p.second="Australia";
+    ump.insert(p);
+
+
+    return 0;
 }
