@@ -32,6 +32,9 @@ void mergeTwoSortedArray(int arr[], int start, int mid, int end){
     while(i<leftArraySize) arr[index++]=leftArray[i++];
     while(j<rightArraySize) arr[index++]=rightArray[j++];
 
+    delete [] leftArray;
+    delete [] rightArray;
+
 }
 
 void mergeSort(int arr[], int start, int end){
