@@ -1,6 +1,26 @@
 #include <iostream>
 using namespace std;
 
+void mergeTwoSortedArrayInplace(int arr[], int start, int mid, int end){
+    int i=start, j=mid+1;
+    while(i<j && j<=end){
+        if(arr[i]<=arr[j]){
+            i++;
+        } else {
+           int value=arr[j];
+           int k=j;
+           while(k>i){
+            arr[k]=arr[k-1];
+            k--;
+           }
+           arr[i]=value;
+           j++;
+           i++;
+        }
+    }
+}
+
+
 void mergeTwoSortedArray(int arr[], int start, int mid, int end){
     int leftArraySize=mid-start+1;
     int rightArraySize=end-mid;
@@ -53,14 +73,17 @@ void mergeSort(int arr[], int start, int end){
     // right merge
     mergeSort(arr, mid+1, end);
 
-    mergeTwoSortedArray(arr, start, mid, end);
+    // mergeTwoSortedArray(arr, start, mid, end);
+
+    mergeTwoSortedArrayInplace(arr, start, mid, end);
 }
 
 int main() 
 {
     // merge sort code
     int arr[]={10,54,23,89,67,50,40,2,0};
-    int size=9;
+    // int arr[]={12,33,45,66,16,37,40,45};
+    int size=8;
     int start=0, end=size-1;
     for(int i=0;i<size;i++) cout<<arr[i]<<" ";
     cout<<endl;
